@@ -1,7 +1,7 @@
 # flake-registry
 
-This is a CLI tool that lists all of the entries in the most recent [flake
-registry][registry].
+This is a CLI tool that lists all of the entries in the most recent [global
+flake registry][registry].
 
 ```shell
 # Without installation
