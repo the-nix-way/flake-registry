@@ -12,5 +12,18 @@ nix profile install github:the-nix-way/flake-registry
 flake-registry
 ```
 
+The flake registry enables you to add flake inputs to a Nix flake's `outputs`
+without explicitly adding them to the `inputs` attribute. Here's an example:
+
+```nix
+{
+  # No inputs!
+
+  outputs = { self, nixpkgs }: {
+    # Do something with nixpkgs
+  };
+}
+```
+
 [flakes]: https://nixos.wiki/wiki/Flakes
 [registry]: https://raw.githubusercontent.com/NixOS/flake-registry/master/flake-registry.json
